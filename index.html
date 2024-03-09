@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div class="main">
+        <div class="usrSelect" id="usrSelect"><p>First Player is X.</p></div>
+        <dialog >
+            <!-- <div class="modal-show">
+                <p>YOU WON HAPPY???</p>
+                <button id="reset">Restart </button>
+            </div> -->
+        </dialog>
+        <div class="game">
+        	<!-- use static method to improve the code; ie to  avoid tic.method() to something like ticTacToe.gamePlay -->
+            <div class="grid-items" id="cell-0-0" onclick="tic.gamePlay(this.id)"></div>
+            <div class="grid-items" id="cell-0-1" onclick="tic.gamePlay(this.id)"></div>
+            <div class="grid-items" id="cell-0-2" onclick="tic.gamePlay(this.id)"></div>
+            <div class="grid-items" id="cell-1-0" onclick="tic.gamePlay(this.id)"></div>
+            <div class="grid-items" id="cell-1-1" onclick="tic.gamePlay(this.id)"></div>
+            <div class="grid-items" id="cell-1-2" onclick="tic.gamePlay(this.id)"></div>
+            <div class="grid-items" id="cell-2-0" onclick="tic.gamePlay(this.id)"></div>
+            <div class="grid-items" id="cell-2-1" onclick="tic.gamePlay(this.id)"></div>
+            <div class="grid-items" id="cell-2-2" onclick="tic.gamePlay(this.id)"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

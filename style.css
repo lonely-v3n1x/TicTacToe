@@ -1,0 +1,68 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+
+
+dialog{
+    height: 150px;
+    width: 250px;
+}
+
+
+
+.main{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;;
+}
+
+.game{
+    display:grid;
+    background-color: black;
+    height: 250px;
+    width: 220px;
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap:2px;
+    border-radius: 5px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.grid-items{
+    background-color: white;
+    /* border: 2px solid black; */
+    padding:0px;
+    /* border-radius: 5px; */
+    background-size: cover;
+}
+
+.grid-items img{
+    height: auto;
+    width: auto;
+    color: black;
+}
+
+.selected{
+    background-color: black;
+}
+
+/* .grid-items:first-child{
+    background-image: url("./x.svg");
+    background-size: cover;
+} */
+
+.modal-show{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-show p{
+    margin-bottom: 50px;
+}
